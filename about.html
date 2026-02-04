@@ -17,8 +17,25 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: { DEFAULT: '#1E40AF', 600: '#2563eb', 700: '#1d4ed8' },
-                        dark: { bg: '#0F172A', card: '#1E293B', text: '#F1F5F9' }
+                        primary: {
+                            DEFAULT: '#1E40AF',
+                            50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 300: '#93c5fd', 400: '#60a5fa',
+                            500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 800: '#1e40af', 900: '#1e3a8a',
+                        },
+                        secondary: {
+                            DEFAULT: '#059669',
+                            50: '#ecfdf5', 100: '#d1fae5', 600: '#059669', 700: '#047857',
+                        },
+                        accent: {
+                            DEFAULT: '#F59E0B',
+                            500: '#f59e0b', 600: '#d97706',
+                        },
+                        dark: {
+                            bg: '#0F172A',
+                            card: '#1E293B',
+                            text: '#F1F5F9',
+                            muted: '#94A3B8'
+                        }
                     },
                     fontFamily: { sans: ['Inter', 'sans-serif'] },
                     // RTL Support
@@ -165,8 +182,8 @@
         <div class="container mx-auto px-4">
             <div class="flex flex-col lg:flex-row gap-16 items-center">
                 <div class="lg:w-1/2">
-                    <img src="https://images.unsplash.com/photo-1551609189-6388691eb03a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                        class="rounded-2xl shadow-2xl skew-y-2 dark:opacity-80">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                        class="rounded-2xl shadow-2xl skew-y-2 dark:opacity-80" alt="Data Recovery Professional">
                 </div>
                 <div class="lg:w-1/2">
                     <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-6">Why We Are Different</h2>
@@ -208,8 +225,8 @@
                 <!-- Member 1 -->
                 <div class="bg-white dark:bg-dark-card rounded-xl overflow-hidden shadow-md text-center group">
                     <div class="h-64 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                            class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="assets/images/team/team-member-1.jpg"
+                            class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500" alt="Team Member">
                     </div>
                     <div class="p-6">
                         <h3 class="font-bold text-xl text-slate-900 dark:text-white">David Chen</h3>
@@ -221,8 +238,8 @@
                 <!-- Member 2 -->
                 <div class="bg-white dark:bg-dark-card rounded-xl overflow-hidden shadow-md text-center group">
                     <div class="h-64 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                            class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="assets/images/team/team-member-2.jpg"
+                            class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500" alt="Team Member">
                     </div>
                     <div class="p-6">
                         <h3 class="font-bold text-xl text-slate-900 dark:text-white">Sarah Wilson</h3>
@@ -234,8 +251,8 @@
                 <!-- Member 3 -->
                 <div class="bg-white dark:bg-dark-card rounded-xl overflow-hidden shadow-md text-center group">
                     <div class="h-64 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                            class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="assets/images/team/team-member-3.jpg"
+                            class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500" alt="Team Member">
                     </div>
                     <div class="p-6">
                         <h3 class="font-bold text-xl text-slate-900 dark:text-white">James Rodriguez</h3>

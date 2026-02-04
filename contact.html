@@ -17,8 +17,25 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: { DEFAULT: '#1E40AF', 600: '#2563eb', 700: '#1d4ed8' },
-                        dark: { bg: '#0F172A', card: '#1E293B', text: '#F1F5F9' }
+                        primary: {
+                            DEFAULT: '#1E40AF',
+                            50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 300: '#93c5fd', 400: '#60a5fa',
+                            500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 800: '#1e40af', 900: '#1e3a8a',
+                        },
+                        secondary: {
+                            DEFAULT: '#059669',
+                            50: '#ecfdf5', 100: '#d1fae5', 600: '#059669', 700: '#047857',
+                        },
+                        accent: {
+                            DEFAULT: '#F59E0B',
+                            500: '#f59e0b', 600: '#d97706',
+                        },
+                        dark: {
+                            bg: '#0F172A',
+                            card: '#1E293B',
+                            text: '#F1F5F9',
+                            muted: '#94A3B8'
+                        }
                     },
                     fontFamily: { sans: ['Inter', 'sans-serif'] },
                     // RTL Support
