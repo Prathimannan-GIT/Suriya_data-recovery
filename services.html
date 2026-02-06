@@ -69,45 +69,39 @@
     <header
         class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/95 dark:bg-dark-bg/95 backdrop-blur-md shadow-sm"
         id="main-header">
-        <div class="container mx-auto px-4 py-3">
-            <div class="flex justify-between items-center">
+        <div class="container mx-auto px-4 h-full">
+            <div class="navbar h-full">
                 <a href="index.html"
                     class="flex items-center gap-2 text-2xl font-bold text-primary-800 dark:text-blue-400">
                     <i class="fa-solid fa-shield-halved text-3xl"></i>
                     <span>DataRecovery</span>
                 </a>
-                <nav class="hidden lg:flex items-center gap-6 font-medium">
+                <nav class="nav-menu hidden lg:flex items-center font-medium text-sm">
                     <a href="index.html" class="text-primary-600 dark:text-blue-400">Home</a>
-                    <a href="index-v2.html" class="hover:text-primary-600 dark:hover:text-blue-400 transition">Home
-                        2</a>
+                    <a href="index-v2.html" class="hover:text-primary-600 dark:hover:text-blue-400 transition whitespace-nowrap">Home 2</a>
                     <a href="about.html" class="hover:text-primary-600 dark:hover:text-blue-400 transition">About</a>
                     <a href="services.html" class="text-primary-600 dark:text-blue-400">Services</a>
-                    <a href="how-it-works.html" class="hover:text-primary-600 dark:hover:text-blue-400 transition">How
-                        It Works</a>
-                    <a href="pricing.html"
-                        class="hover:text-primary-600 dark:hover:text-blue-400 transition">Pricing</a>
-                    <a href="track-case.html" class="hover:text-primary-600 dark:hover:text-blue-400 transition">Track
-                        Case</a>
-                    <a href="contact.html"
-                        class="hover:text-primary-600 dark:hover:text-blue-400 transition">Contact</a>
+                    <a href="how-it-works.html" class="hover:text-primary-600 dark:hover:text-blue-400 transition whitespace-nowrap">How It Works</a>
+                    <a href="pricing.html" class="hover:text-primary-600 dark:hover:text-blue-400 transition">Pricing</a>
+                    <a href="contact.html" class="hover:text-primary-600 dark:hover:text-blue-400 transition">Contact</a>
                 </nav>
-                <div class="hidden lg:flex items-center gap-4">
+                <div class="hidden lg:flex items-center gap-3">
                     <a href="login.html"
-                        class="border border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white px-5 py-2 rounded-lg shadow-md hover:shadow-lg transition text-sm font-bold">
+                        class="border border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white px-4 py-2 rounded-lg shadow-md hover:shadow-lg transition text-sm font-bold whitespace-nowrap">
                         Login
                     </a>
                     <a href="dashboard-client.html"
-                        class="bg-primary-700 hover:bg-primary-800 text-white px-5 py-2 rounded-lg shadow-md hover:shadow-lg transition text-sm font-bold">
+                        class="bg-primary-700 hover:bg-primary-800 text-white px-4 py-2 rounded-lg shadow-md hover:shadow-lg transition text-sm font-bold whitespace-nowrap">
                         Dashboard
                     </a>
                     <button
-                        class="theme-toggle p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition text-slate-600 dark:text-yellow-400">
+                        class="theme-toggle p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition text-slate-600 dark:text-yellow-400 flex-shrink-0">
                         <i class="fa-solid fa-moon dark:hidden"></i>
                         <i class="fa-solid fa-sun hidden dark:block"></i>
                     </button>
                     <!-- RTL Toggle -->
                     <button id="rtl-toggle"
-                        class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition text-slate-600 dark:text-slate-400"
+                        class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition text-slate-600 dark:text-slate-400 flex-shrink-0"
                         title="Toggle RTL/LTR">
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                     </button>
@@ -155,7 +149,7 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="pt-32 pb-16 bg-slate-900 text-white relative overflow-hidden">
+    <section class="pt-20 pb-16 bg-slate-900 text-white relative overflow-hidden hero">
         <div class="absolute inset-0 z-0">
             <img src="https://images.unsplash.com/photo-1563206767-5b1d972e9fb9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80"
                 class="w-full h-full object-cover opacity-20">
@@ -172,190 +166,202 @@
     <!-- Services Grid -->
     <section class="py-20 bg-slate-50 dark:bg-dark-bg">
         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-stretch">
 
                 <!-- HDD -->
                 <div
-                    class="bg-white dark:bg-dark-card rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden border border-slate-100 dark:border-slate-700 flex flex-col">
-                    <div class="p-8 flex-1">
+                    class="bg-white dark:bg-dark-card rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden border border-slate-100 dark:border-slate-700 flex flex-col h-full">
+                    <div class="p-8 flex-1 flex flex-col items-center justify-start text-center gap-6">
                         <div
-                            class="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 text-blue-600 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                            class="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 text-blue-600 rounded-xl flex items-center justify-center flex-shrink-0">
                             <i class="fa-solid fa-hard-drive text-3xl"></i>
                         </div>
-                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 text-center">Hard Drive Recovery</h3>
-                        <p class="text-slate-600 dark:text-slate-400 mb-6 text-center">We specialize in recovering data from
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white text-center">Hard Drive Recovery</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-center max-w-sm w-full leading-relaxed">We specialize in recovering data from
                             damaged, clicking, or unrecognizable hard disk drives (HDD) from all manufacturers.</p>
 
-                        <div class="space-y-2 mb-6 text-sm text-slate-500 dark:text-slate-400 text-center">
-                            <p><i class="fa-solid fa-check text-green-500 mr-2"></i> Mechanical Failures (Clicking,
+                        <div class="flex flex-col items-center justify-center gap-3 text-sm text-slate-500 dark:text-slate-400 text-center max-w-xs w-full">
+                            <p class="flex items-center justify-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Mechanical Failures (Clicking,
                                 Grinding)</p>
-                            <p><i class="fa-solid fa-check text-green-500 mr-2"></i> Logical Failures (Corrupted,
+                            <p class="flex items-center justify-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Logical Failures (Corrupted,
                                 Deleted)</p>
-                            <p><i class="fa-solid fa-check text-green-500 mr-2"></i> Electronic Failures (PCB Damage)
+                            <p class="flex items-center justify-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Electronic Failures (PCB Damage)
                             </p>
                         </div>
                     </div>
                     <div
-                        class="bg-slate-50 dark:bg-slate-800 p-6 flex justify-between items-center border-t border-slate-100 dark:border-slate-700">
-                        <div>
-                            <span class="block text-xs text-slate-500 uppercase">Starting At</span>
-                            <span class="text-xl font-bold text-primary-600 dark:text-blue-400">$299</span>
+                        class="bg-slate-50 dark:bg-slate-800 p-6 border-t border-slate-100 dark:border-slate-700 flex-shrink-0">
+                        <div class="flex flex-col items-center justify-center text-center gap-3">
+                            <div class="text-center">
+                                <span class="block text-xs text-slate-500 uppercase">Starting At</span>
+                                <span class="text-xl font-bold text-primary-600 dark:text-blue-400">$299</span>
+                            </div>
+                            <a href="contact.html"
+                                class="px-6 py-2 bg-white dark:bg-dark-card border border-slate-300 dark:border-slate-600 rounded-lg hover:border-primary-500 hover:text-primary-600 dark:text-white transition font-medium">Get
+                                Quote</a>
                         </div>
-                        <a href="contact.html"
-                            class="px-6 py-2 bg-white dark:bg-dark-card border border-slate-300 dark:border-slate-600 rounded-lg hover:border-primary-500 hover:text-primary-600 dark:text-white transition font-medium">Get
-                            Quote</a>
                     </div>
                 </div>
 
                 <!-- SSD -->
                 <div
-                    class="bg-white dark:bg-dark-card rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden border border-slate-100 dark:border-slate-700 flex flex-col">
-                    <div class="p-8 flex-1">
+                    class="bg-white dark:bg-dark-card rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden border border-slate-100 dark:border-slate-700 flex flex-col h-full">
+                    <div class="p-8 flex-1 flex flex-col items-center justify-start text-center gap-6">
                         <div
-                            class="w-16 h-16 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                            class="w-16 h-16 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0">
                             <i class="fa-solid fa-memory text-3xl"></i>
                         </div>
-                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 text-center">SSD Data Recovery</h3>
-                        <p class="text-slate-600 dark:text-slate-400 mb-6 text-center">Advanced data extraction from Solid State
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white text-center">SSD Data Recovery</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-center max-w-sm w-full leading-relaxed">Advanced data extraction from Solid State
                             Drives. We have specialized tools for NVMe, SATA, and M.2 drives.</p>
 
-                        <div class="space-y-2 mb-6 text-sm text-slate-500 dark:text-slate-400 text-center">
-                            <p><i class="fa-solid fa-check text-green-500 mr-2"></i> Controller Chip Failures</p>
-                            <p><i class="fa-solid fa-check text-green-500 mr-2"></i> NAND Flash Corruption</p>
-                            <p><i class="fa-solid fa-check text-green-500 mr-2"></i> Firmware Issues</p>
+                        <div class="flex flex-col items-center justify-center gap-3 text-sm text-slate-500 dark:text-slate-400 text-center max-w-xs w-full">
+                            <p class="flex items-center justify-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Controller Chip Failures</p>
+                            <p class="flex items-center justify-center gap-2"><i class="fa-solid fa-check text-green-500"></i> NAND Flash Corruption</p>
+                            <p class="flex items-center justify-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Firmware Issues</p>
                         </div>
                     </div>
                     <div
-                        class="bg-slate-50 dark:bg-slate-800 p-6 flex justify-between items-center border-t border-slate-100 dark:border-slate-700">
-                        <div>
-                            <span class="block text-xs text-slate-500 uppercase">Starting At</span>
-                            <span class="text-xl font-bold text-primary-600 dark:text-blue-400">$499</span>
+                        class="bg-slate-50 dark:bg-slate-800 p-6 border-t border-slate-100 dark:border-slate-700 flex-shrink-0">
+                        <div class="flex flex-col items-center justify-center text-center gap-3">
+                            <div class="text-center">
+                                <span class="block text-xs text-slate-500 uppercase">Starting At</span>
+                                <span class="text-xl font-bold text-primary-600 dark:text-blue-400">$499</span>
+                            </div>
+                            <a href="contact.html"
+                                class="px-6 py-2 bg-white dark:bg-dark-card border border-slate-300 dark:border-slate-600 rounded-lg hover:border-primary-500 hover:text-primary-600 dark:text-white transition font-medium">Get
+                                Quote</a>
                         </div>
-                        <a href="contact.html"
-                            class="px-6 py-2 bg-white dark:bg-dark-card border border-slate-300 dark:border-slate-600 rounded-lg hover:border-primary-500 hover:text-primary-600 dark:text-white transition font-medium">Get
-                            Quote</a>
                     </div>
                 </div>
 
                 <!-- RAID -->
                 <div
-                    class="bg-white dark:bg-dark-card rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden border border-slate-100 dark:border-slate-700 flex flex-col">
-                    <div class="p-8 flex-1">
+                    class="bg-white dark:bg-dark-card rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden border border-slate-100 dark:border-slate-700 flex flex-col h-full">
+                    <div class="p-8 flex-1 flex flex-col items-center justify-start text-center gap-6">
                         <div
-                            class="w-16 h-16 bg-purple-100 dark:bg-purple-900/30 text-purple-600 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                            class="w-16 h-16 bg-purple-100 dark:bg-purple-900/30 text-purple-600 rounded-xl flex items-center justify-center flex-shrink-0">
                             <i class="fa-solid fa-server text-3xl"></i>
                         </div>
-                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 text-center">RAID & Server Recovery</h3>
-                        <p class="text-slate-600 dark:text-slate-400 mb-6 text-center">Critical business data recovery for all RAID
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white text-center">RAID & Server Recovery</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-center max-w-sm w-full leading-relaxed">Critical business data recovery for all RAID
                             levels (0, 1, 5, 10, 50, 60) and NAS/SAN devices.</p>
 
-                        <div class="space-y-2 mb-6 text-sm text-slate-500 dark:text-slate-400 text-center">
-                            <p><i class="fa-solid fa-check text-green-500 mr-2"></i> Multiple Drive Failures</p>
-                            <p><i class="fa-solid fa-check text-green-500 mr-2"></i> Rebuild Errors</p>
-                            <p><i class="fa-solid fa-check text-green-500 mr-2"></i> Controller Failures</p>
+                        <div class="flex flex-col items-center justify-center gap-3 text-sm text-slate-500 dark:text-slate-400 text-center max-w-xs w-full">
+                            <p class="flex items-center justify-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Multiple Drive Failures</p>
+                            <p class="flex items-center justify-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Rebuild Errors</p>
+                            <p class="flex items-center justify-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Controller Failures</p>
                         </div>
                     </div>
                     <div
-                        class="bg-slate-50 dark:bg-slate-800 p-6 flex justify-between items-center border-t border-slate-100 dark:border-slate-700">
-                        <div>
-                            <span class="block text-xs text-slate-500 uppercase">Pricing</span>
-                            <span class="text-xl font-bold text-primary-600 dark:text-blue-400">Custom Quote</span>
+                        class="bg-slate-50 dark:bg-slate-800 p-6 border-t border-slate-100 dark:border-slate-700 flex-shrink-0">
+                        <div class="flex flex-col items-center justify-center text-center gap-3">
+                            <div class="text-center">
+                                <span class="block text-xs text-slate-500 uppercase">Pricing</span>
+                                <span class="text-xl font-bold text-primary-600 dark:text-blue-400">Custom Quote</span>
+                            </div>
+                            <a href="contact.html"
+                                class="px-6 py-2 bg-white dark:bg-dark-card border border-slate-300 dark:border-slate-600 rounded-lg hover:border-primary-500 hover:text-primary-600 dark:text-white transition font-medium">Contact
+                                Us</a>
                         </div>
-                        <a href="contact.html"
-                            class="px-6 py-2 bg-white dark:bg-dark-card border border-slate-300 dark:border-slate-600 rounded-lg hover:border-primary-500 hover:text-primary-600 dark:text-white transition font-medium">Contact
-                            Us</a>
                     </div>
                 </div>
 
                 <!-- USB/SD -->
                 <div
-                    class="bg-white dark:bg-dark-card rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden border border-slate-100 dark:border-slate-700 flex flex-col">
-                    <div class="p-8 flex-1">
+                    class="bg-white dark:bg-dark-card rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden border border-slate-100 dark:border-slate-700 flex flex-col h-full">
+                    <div class="p-8 flex-1 flex flex-col items-center justify-start text-center gap-6">
                         <div
-                            class="w-16 h-16 bg-amber-100 dark:bg-amber-900/30 text-amber-600 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                            class="w-16 h-16 bg-amber-100 dark:bg-amber-900/30 text-amber-600 rounded-xl flex items-center justify-center flex-shrink-0">
                             <i class="fa-brands fa-usb text-3xl"></i>
                         </div>
-                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 text-center">Flash Media Recovery</h3>
-                        <p class="text-slate-600 dark:text-slate-400 mb-6 text-center">Recovery for USB thumb drives, SD cards,
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white text-center">Flash Media Recovery</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-center max-w-sm w-full leading-relaxed">Recovery for USB thumb drives, SD cards,
                             CompactFlash, and other removable media.</p>
 
-                        <div class="space-y-2 mb-6 text-sm text-slate-500 dark:text-slate-400 text-center">
-                            <p><i class="fa-solid fa-check text-green-500 mr-2"></i> Broken Connectors</p>
-                            <p><i class="fa-solid fa-check text-green-500 mr-2"></i> "Disk Not Formatted" Errors</p>
-                            <p><i class="fa-solid fa-check text-green-500 mr-2"></i> Accidental Deletion</p>
+                        <div class="flex flex-col items-center justify-center gap-3 text-sm text-slate-500 dark:text-slate-400 text-center max-w-xs w-full">
+                            <p class="flex items-center justify-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Broken Connectors</p>
+                            <p class="flex items-center justify-center gap-2"><i class="fa-solid fa-check text-green-500"></i> "Disk Not Formatted" Errors</p>
+                            <p class="flex items-center justify-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Accidental Deletion</p>
                         </div>
                     </div>
                     <div
-                        class="bg-slate-50 dark:bg-slate-800 p-6 flex justify-between items-center border-t border-slate-100 dark:border-slate-700">
-                        <div>
-                            <span class="block text-xs text-slate-500 uppercase">Starting At</span>
-                            <span class="text-xl font-bold text-primary-600 dark:text-blue-400">$199</span>
+                        class="bg-slate-50 dark:bg-slate-800 p-6 border-t border-slate-100 dark:border-slate-700 flex-shrink-0">
+                        <div class="flex flex-col items-center justify-center text-center gap-3">
+                            <div class="text-center">
+                                <span class="block text-xs text-slate-500 uppercase">Starting At</span>
+                                <span class="text-xl font-bold text-primary-600 dark:text-blue-400">$199</span>
+                            </div>
+                            <a href="contact.html"
+                                class="px-6 py-2 bg-white dark:bg-dark-card border border-slate-300 dark:border-slate-600 rounded-lg hover:border-primary-500 hover:text-primary-600 dark:text-white transition font-medium">Get
+                                Quote</a>
                         </div>
-                        <a href="contact.html"
-                            class="px-6 py-2 bg-white dark:bg-dark-card border border-slate-300 dark:border-slate-600 rounded-lg hover:border-primary-500 hover:text-primary-600 dark:text-white transition font-medium">Get
-                            Quote</a>
                     </div>
                 </div>
 
                 <!-- Mobile -->
                 <div
-                    class="bg-white dark:bg-dark-card rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden border border-slate-100 dark:border-slate-700 flex flex-col">
-                    <div class="p-8 flex-1">
+                    class="bg-white dark:bg-dark-card rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden border border-slate-100 dark:border-slate-700 flex flex-col h-full">
+                    <div class="p-8 flex-1 flex flex-col items-center justify-start text-center gap-6">
                         <div
-                            class="w-16 h-16 bg-cyan-100 dark:bg-cyan-900/30 text-cyan-600 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                            class="w-16 h-16 bg-cyan-100 dark:bg-cyan-900/30 text-cyan-600 rounded-xl flex items-center justify-center flex-shrink-0">
                             <i class="fa-solid fa-mobile-screen text-3xl"></i>
                         </div>
-                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 text-center">Smartphone Recovery</h3>
-                        <p class="text-slate-600 dark:text-slate-400 mb-6 text-center">Recovery from iPhone and Android devices. We
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white text-center">Smartphone Recovery</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-center max-w-sm w-full leading-relaxed">Recovery from iPhone and Android devices. We
                             can retrieve photos, contacts, messages, and app data.</p>
 
-                        <div class="space-y-2 mb-6 text-sm text-slate-500 dark:text-slate-400 text-center">
-                            <p><i class="fa-solid fa-check text-green-500 mr-2"></i> Water Damage</p>
-                            <p><i class="fa-solid fa-check text-green-500 mr-2"></i> Boot Loop / Logic Board Issues</p>
-                            <p><i class="fa-solid fa-check text-green-500 mr-2"></i> Broken Screens</p>
+                        <div class="flex flex-col items-center justify-center gap-3 text-sm text-slate-500 dark:text-slate-400 text-center max-w-xs w-full">
+                            <p class="flex items-center justify-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Water Damage</p>
+                            <p class="flex items-center justify-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Boot Loop / Logic Board Issues</p>
+                            <p class="flex items-center justify-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Broken Screens</p>
                         </div>
                     </div>
                     <div
-                        class="bg-slate-50 dark:bg-slate-800 p-6 flex justify-between items-center border-t border-slate-100 dark:border-slate-700">
-                        <div>
-                            <span class="block text-xs text-slate-500 uppercase">Starting At</span>
-                            <span class="text-xl font-bold text-primary-600 dark:text-blue-400">$299</span>
+                        class="bg-slate-50 dark:bg-slate-800 p-6 border-t border-slate-100 dark:border-slate-700 flex-shrink-0">
+                        <div class="flex flex-col items-center justify-center text-center gap-3">
+                            <div class="text-center">
+                                <span class="block text-xs text-slate-500 uppercase">Starting At</span>
+                                <span class="text-xl font-bold text-primary-600 dark:text-blue-400">$299</span>
+                            </div>
+                            <a href="contact.html"
+                                class="px-6 py-2 bg-white dark:bg-dark-card border border-slate-300 dark:border-slate-600 rounded-lg hover:border-primary-500 hover:text-primary-600 dark:text-white transition font-medium">Get
+                                Quote</a>
                         </div>
-                        <a href="contact.html"
-                            class="px-6 py-2 bg-white dark:bg-dark-card border border-slate-300 dark:border-slate-600 rounded-lg hover:border-primary-500 hover:text-primary-600 dark:text-white transition font-medium">Get
-                            Quote</a>
                     </div>
                 </div>
 
                 <!-- Emergency -->
                 <div
-                    class="rounded-2xl shadow-xl transition duration-300 overflow-hidden border-2 border-red-500 relative flex flex-col bg-white dark:bg-dark-card">
+                    class="rounded-2xl shadow-xl transition duration-300 overflow-hidden border-2 border-red-500 relative flex flex-col h-full bg-white dark:bg-dark-card">
                     <div
                         class="absolute top-0 inset-x-0 bg-red-600 text-white text-center py-1 text-xs font-bold uppercase tracking-widest">
                         24/7 Critical Response</div>
-                    <div class="p-8 flex-1 pt-12">
+                    <div class="p-8 flex-1 pt-12 flex flex-col items-center justify-start text-center gap-6">
                         <div
-                            class="w-16 h-16 bg-red-100 dark:bg-red-900/40 text-red-600 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                            class="w-16 h-16 bg-red-100 dark:bg-red-900/40 text-red-600 rounded-xl flex items-center justify-center flex-shrink-0">
                             <i class="fa-solid fa-truck-medical text-3xl"></i>
                         </div>
-                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 text-center">Emergency Services</h3>
-                        <p class="text-slate-600 dark:text-slate-400 mb-6 text-center">When every second counts. Our team works 24/7
-                            on your case until the data is recovered.</p>
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white text-center">Emergency Services</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-center max-w-sm w-full leading-relaxed">When every second counts. Our team works 24/7
+                            on your case until data is recovered.</p>
 
-                        <div class="space-y-2 mb-6 text-sm text-slate-500 dark:text-slate-400 text-center">
-                            <p><i class="fa-solid fa-check text-red-500 mr-2"></i> Same-Day Diagnostics</p>
-                            <p><i class="fa-solid fa-check text-red-500 mr-2"></i> Dedicated Engineer</p>
-                            <p><i class="fa-solid fa-check text-red-500 mr-2"></i> 24/7 Updates</p>
+                        <div class="flex flex-col items-center justify-center gap-3 text-sm text-slate-500 dark:text-slate-400 text-center max-w-xs w-full">
+                            <p class="flex items-center justify-center gap-2"><i class="fa-solid fa-check text-red-500"></i> Same-Day Diagnostics</p>
+                            <p class="flex items-center justify-center gap-2"><i class="fa-solid fa-check text-red-500"></i> Dedicated Engineer</p>
+                            <p class="flex items-center justify-center gap-2"><i class="fa-solid fa-check text-red-500"></i> 24/7 Updates</p>
                         </div>
                     </div>
                     <div
-                        class="bg-red-50 dark:bg-red-900/10 p-6 flex justify-between items-center border-t border-red-100 dark:border-red-900/30">
-                        <div class="text-red-700 dark:text-red-400 font-bold">
-                            Call (800) 123-4567
+                        class="bg-red-50 dark:bg-red-900/10 p-6 border-t border-red-100 dark:border-red-900/30 flex-shrink-0">
+                        <div class="flex flex-col items-center justify-center text-center gap-3">
+                            <div class="text-red-700 dark:text-red-400 font-bold text-center">
+                                Call (800) 123-4567
+                            </div>
+                            <a href="contact.html"
+                                class="px-6 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition font-bold shadow-lg shadow-red-500/30">Call
+                                Now</a>
                         </div>
-                        <a href="contact.html"
-                            class="px-6 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition font-bold shadow-lg shadow-red-500/30">Call
-                            Now</a>
                     </div>
                 </div>
 
@@ -387,61 +393,61 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Database Recovery -->
                 <div
-                    class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-xl border border-slate-100 dark:border-slate-700">
+                    class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-xl border border-slate-100 dark:border-slate-700 flex flex-col items-center justify-center text-center gap-6 h-full">
                     <div
-                        class="w-12 h-12 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 rounded-lg flex items-center justify-center mb-4">
+                        class="w-12 h-12 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 rounded-lg flex items-center justify-center flex-shrink-0">
                         <i class="fa-solid fa-database text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Database Recovery</h3>
-                    <p class="text-slate-600 dark:text-slate-400 mb-4">Recover corrupted MySQL, PostgreSQL, SQL Server,
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white text-center">Database Recovery</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-center max-w-sm w-full leading-relaxed">Recover corrupted MySQL, PostgreSQL, SQL Server,
                         and Oracle databases with full integrity.</p>
-                    <div class="flex justify-center mb-4">
+                    <div class="flex justify-center">
                         <i class="fa-solid fa-user-tie text-3xl text-indigo-600"></i>
                     </div>
-                    <ul class="text-sm text-slate-500 space-y-1">
-                        <li>• Table corruption修复</li>
-                        <li>• Transaction log recovery</li>
-                        <li>• Schema reconstruction</li>
+                    <ul class="text-sm text-slate-500 flex flex-col items-center justify-center gap-3 text-center max-w-xs w-full list-none">
+                        <li class="flex items-center justify-center">• Table corruption修复</li>
+                        <li class="flex items-center justify-center">• Transaction log recovery</li>
+                        <li class="flex items-center justify-center">• Schema reconstruction</li>
                     </ul>
                 </div>
 
                 <!-- Virtual Machine Recovery -->
                 <div
-                    class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-xl border border-slate-100 dark:border-slate-700">
+                    class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-xl border border-slate-100 dark:border-slate-700 flex flex-col items-center justify-center text-center gap-6 h-full">
                     <div
-                        class="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 text-purple-600 rounded-lg flex items-center justify-center mb-4">
+                        class="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 text-purple-600 rounded-lg flex items-center justify-center flex-shrink-0">
                         <i class="fa-solid fa-computer text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Virtual Machine Recovery</h3>
-                    <p class="text-slate-600 dark:text-slate-400 mb-4">Restore VMware, Hyper-V, and VirtualBox VMs from
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white text-center">Virtual Machine Recovery</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-center max-w-sm w-full leading-relaxed">Restore VMware, Hyper-V, and VirtualBox VMs from
                         damaged virtual disks and snapshots.</p>
-                    <div class="flex justify-center mb-4">
+                    <div class="flex justify-center">
                         <i class="fa-solid fa-user-tie text-3xl text-purple-600"></i>
                     </div>
-                    <ul class="text-sm text-slate-500 space-y-1">
-                        <li>• VMDK/VHD/VHDX files</li>
-                        <li>• Deleted VM recovery</li>
-                        <li>• Snapshot restoration</li>
+                    <ul class="text-sm text-slate-500 flex flex-col items-center justify-center gap-3 text-center max-w-xs w-full list-none">
+                        <li class="flex items-center justify-center">• VMDK/VHD/VHDX files</li>
+                        <li class="flex items-center justify-center">• Deleted VM recovery</li>
+                        <li class="flex items-center justify-center">• Snapshot restoration</li>
                     </ul>
                 </div>
 
                 <!-- Email Recovery -->
                 <div
-                    class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-xl border border-slate-100 dark:border-slate-700">
+                    class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-xl border border-slate-100 dark:border-slate-700 flex flex-col items-center justify-center text-center gap-6 h-full">
                     <div
-                        class="w-12 h-12 bg-rose-100 dark:bg-rose-900/30 text-rose-600 rounded-lg flex items-center justify-center mb-4">
+                        class="w-12 h-12 bg-rose-100 dark:bg-rose-900/30 text-rose-600 rounded-lg flex items-center justify-center flex-shrink-0">
                         <i class="fa-solid fa-envelope text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Email & Cloud Recovery</h3>
-                    <p class="text-slate-600 dark:text-slate-400 mb-4">Recover emails, attachments, and cloud storage
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white text-center">Email & Cloud Recovery</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-center max-w-sm w-full leading-relaxed">Recover emails, attachments, and cloud storage
                         data from Office 365, Google Workspace, and more.</p>
-                    <div class="flex justify-center mb-4">
+                    <div class="flex justify-center">
                         <i class="fa-solid fa-user-tie text-3xl text-rose-600"></i>
                     </div>
-                    <ul class="text-sm text-slate-500 space-y-1">
-                        <li>• Exchange Server</li>
-                        <li>• Outlook PST files</li>
-                        <li>• Google Drive/OneDrive</li>
+                    <ul class="text-sm text-slate-500 flex flex-col items-center justify-center gap-3 text-center max-w-xs w-full list-none">
+                        <li class="flex items-center justify-center">• Exchange Server</li>
+                        <li class="flex items-center justify-center">• Outlook PST files</li>
+                        <li class="flex items-center justify-center">• Google Drive/OneDrive</li>
                     </ul>
                 </div>
             </div>
@@ -459,46 +465,46 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Clean Room -->
-                <div class="text-center">
+                <div class="text-center flex flex-col items-center justify-center gap-4">
                     <div
-                        class="w-16 h-16 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        class="w-16 h-16 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 rounded-full flex items-center justify-center flex-shrink-0">
                         <i class="fa-solid fa-microscope text-2xl"></i>
                     </div>
-                    <h3 class="font-bold text-slate-900 dark:text-white mb-2">ISO 5 Clean Room</h3>
-                    <p class="text-sm text-slate-600 dark:text-slate-400">Class 100 clean room for mechanical repairs
+                    <h3 class="font-bold text-slate-900 dark:text-white text-center">ISO 5 Clean Room</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 text-center leading-relaxed">Class 100 clean room for mechanical repairs
                         and head replacements</p>
                 </div>
 
                 <!-- Proprietary Tools -->
-                <div class="text-center">
+                <div class="text-center flex flex-col items-center justify-center gap-4">
                     <div
-                        class="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        class="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 text-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
                         <i class="fa-solid fa-wrench text-2xl"></i>
                     </div>
-                    <h3 class="font-bold text-slate-900 dark:text-white mb-2">Custom Tools</h3>
-                    <p class="text-sm text-slate-600 dark:text-slate-400">Proprietary hardware and software for complex
+                    <h3 class="font-bold text-slate-900 dark:text-white text-center">Custom Tools</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 text-center leading-relaxed">Proprietary hardware and software for complex
                         recoveries</p>
                 </div>
 
                 <!-- Encryption -->
-                <div class="text-center">
+                <div class="text-center flex flex-col items-center justify-center gap-4">
                     <div
-                        class="w-16 h-16 bg-purple-100 dark:bg-purple-900/30 text-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        class="w-16 h-16 bg-purple-100 dark:bg-purple-900/30 text-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
                         <i class="fa-solid fa-lock text-2xl"></i>
                     </div>
-                    <h3 class="font-bold text-slate-900 dark:text-white mb-2">Decryption</h3>
-                    <p class="text-sm text-slate-600 dark:text-slate-400">Handle encrypted drives and
+                    <h3 class="font-bold text-slate-900 dark:text-white text-center">Decryption</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 text-center leading-relaxed">Handle encrypted drives and
                         ransomware-affected systems</p>
                 </div>
 
                 <!-- 24/7 Support -->
-                <div class="text-center">
+                <div class="text-center flex flex-col items-center justify-center gap-4">
                     <div
-                        class="w-16 h-16 bg-amber-100 dark:bg-amber-900/30 text-amber-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        class="w-16 h-16 bg-amber-100 dark:bg-amber-900/30 text-amber-600 rounded-full flex items-center justify-center flex-shrink-0">
                         <i class="fa-solid fa-clock text-2xl"></i>
                     </div>
-                    <h3 class="font-bold text-slate-900 dark:text-white mb-2">24/7 Lab</h3>
-                    <p class="text-sm text-slate-600 dark:text-slate-400">Around-the-clock emergency recovery services
+                    <h3 class="font-bold text-slate-900 dark:text-white text-center">24/7 Lab</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 text-center leading-relaxed">Around-the-clock emergency recovery services
                     </p>
                 </div>
             </div>

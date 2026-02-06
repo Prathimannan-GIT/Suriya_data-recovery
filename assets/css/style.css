@@ -160,3 +160,188 @@ body {
 .dark .bg-white {
     background-color: #1E293B;
 }
+
+/* Global Responsive Fixes */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+/* Prevent horizontal overflow on all devices */
+.container {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Ensure images don't overflow */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Fix for long text content */
+.text-break {
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+/* Responsive typography */
+@media (max-width: 640px) {
+    h1 {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
+    .guarantee-title {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* Tablet specific fixes */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .payment-options-title {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* Desktop header optimization */
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .hidden.lg\\:flex.items-center.gap-4 {
+        gap: 0.75rem;
+    }
+    
+    .text-sm {
+        font-size: 0.875rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .payment-options-title {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* Ensure buttons remain clickable */
+button, a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Fix for form inputs on mobile */
+@media (max-width: 640px) {
+    input, textarea, select {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+}
+
+/* Header Structure Fixes */
+#main-header {
+    height: 72px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 24px;
+    white-space: nowrap;
+}
+
+/* Desktop Responsiveness (1024×1366) */
+@media (max-width: 1366px) {
+    .nav-menu {
+        gap: 18px;
+        font-size: 14px;
+    }
+}
+
+/* Hero Section Flush with Header */
+.hero {
+    margin-top: 0;
+}
+
+/* Prevent header layout shifts */
+#main-header .container {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Ensure header buttons align properly */
+#main-header .flex {
+    align-items: center;
+}
+
+/* Remove extra spacing below header */
+#main-header + * {
+    margin-top: 0;
+}
+
+/* Pricing page: strict center alignment for "What Affects Your Recovery Cost?" factor cards */
+.pricing-factors {
+    align-items: stretch;
+}
+
+.pricing-factor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.pricing-factor-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    flex: 0 0 auto;
+}
+
+.pricing-factor-title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.pricing-factor-text {
+    text-align: center;
+    line-height: 1.6;
+    max-width: 22ch;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
